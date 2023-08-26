@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+.menu{
+   background: url("/Resources/Back1.jpg");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    transition: 2s;
+        header{
+            padding: 0px 60px;
+            color: white; 
+            height: 100px;
+            background-color: rgba(101,72,103, 0.2);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 1px 10px white;
+            .logo{
+                margin-left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 80px;
+                }
+            }
+            button{
+                background-color: transparent;
+                border: none; 
+            }
+            button:hover{
+                img{
+                    width: 60px;
+                    transition: 1s ease-in-out; 
+                }
+            }
+            span{
+                font-size: 20px;
+            }
+        } 
+        .cloud{
+            display: flex;
+            flex-direction: column;
+            img{
+                position: absolute;
+                animation: animates 5s infinite;
+                top: 90%;
+                left: -2vw;
+            }
+        }
+        .main-content {
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 500px;
+            animation: text 1s infinite;
+            transition: all 1s;
+            
+            h1,h3{
+                font-size: 55px;
+                color: aliceblue;
+                font-family: 'Barriecito', cursive;
+            }
+            h1:hover,h3:hover{
+                color: #27272b;
+            }
+        }
+        .insert{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            text-align: center;  
+            input{
+                box-shadow: 1px 1px 1px black;
+                text-align: center;
+                border: none;
+                outline: none;
+                height: 30px;
+                width: 23%;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                background-color: rgba(101,72,103, 0.2);
+            }
+            input::placeholder{
+                color: #fff;
+                text-align: center;
+            }
+            #start{
+                padding: 16px;
+                background-color: #FE3400;
+                height: 50px;
+                width: 24%;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bolder;
+                border-radius: 10px;
+                color: white;
+                cursor: pointer;
+            }
+            #start:hover{
+                background-color: #CC3201;  
+            }
+        }
+}
+
+@keyframes animates {
+    0%
+    {   scale: 0,5;
+        rotate: 360deg;
+        transform: rotate(360deg);
+        transform-origin: 10px;
+      
+    }
+    50%
+    {
+        scale: 0,5;
+        rotate: 360deg;
+        translate: calc(50vw) 0;
+        transform-origin: 10px;
+        
+    }
+    100%
+    {
+        scale: 0,5;
+        rotate: 720deg;
+        translate: calc(100vw) 0;
+        transform-origin: 10px;
+       
+        
+    }
+    
+}
+@keyframes text{
+    0%
+    {
+        margin-top: 0px;
+        
+    }
+    50%{
+        margin-top: 10px;
+        
+    }   
+    100%
+    {
+        margin-top: 0;
+    
+    }
+}
+@media screen and (max-width: 700px) {
+    header{
+        padding: 0;
+    }
+    .menu{
+        .main-content {
+            h1,
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
+   
+    
+  
+    .insert input::placeholder{
+        font-size: 10px;
+    }
+
+}
+    
