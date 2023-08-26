@@ -1,8 +1,8 @@
 const start = document.querySelector("#start")
 const restart = document.querySelector("#restart")
 const contentList = document.querySelector(".list");
-let arrayBack2 =["/Resources/Back1.jpg","/Resources/Back2.jpg","/Resources/Back3.jpg","/Resources/Back4.jpg"]
-const audio = new Audio("/Resources/[Ghost] Riders In the Sky (Digitally Remastered, 1996).mp3")
+let arrayBack2 =["../Resources/Back1.jpg","../Resources/Back2.jpg","../Resources/Back3.jpg","../Resources/Back4.jpg"]
+const audio = new Audio("../Resources/[Ghost] Riders In the Sky (Digitally Remastered, 1996).mp3")
 var flag = false;
 let index1 = 0;
 let choice = "";

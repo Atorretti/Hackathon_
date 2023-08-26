@@ -2,7 +2,10 @@ const btn = document.querySelector("#start");
 const img = document.querySelector(".menu");
 let input = document.querySelector("#name")
 
-let arrayBack =["/Resources/Back1.jpg","/Resources/Back2.jpg","/Resources/Back3.jpg","/Resources/Back4.jpg"]
+let arrayBack =["../Resources/Back1.jpg",
+"../Resources/Back2.jpg",
+"../Resources/Back3.jpg",
+"../Resources/Back4.jpg"]
 let index = 0;
 
 window.onload = () =>{
